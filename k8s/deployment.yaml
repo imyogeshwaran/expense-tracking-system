@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: expense-container
-          image: YOUR_USERNAME/expense-app
+          image: imyogeshwaran/expense-app
           ports:
             - containerPort: 8080
