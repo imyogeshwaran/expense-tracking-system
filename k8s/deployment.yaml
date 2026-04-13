@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: expense-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: expense-app
+  template:
+    metadata:
+      labels:
+        app: expense-app
+    spec:
+      containers:
+        - name: expense-container
+          image: YOUR_USERNAME/expense-app
+          ports:
+            - containerPort: 8080
